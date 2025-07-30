@@ -3,7 +3,7 @@ function maxUniqueSubstrLength(s) {
   const cache = new Map()
 
   for (let right = 0; right < s.length; right++) {
-    if (cache.has(s[right] && cache.get(s[right] >= left))) {
+    if (cache.has(s[right] ) && cache.get(s[right]) >= left) {
       left = cache.get(s[right]) + 1
     }
 
