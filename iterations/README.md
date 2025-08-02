@@ -106,3 +106,53 @@ L-E-S-A-U-R → Left, Expand, Shrink, Add, Update, Return
 - Visualize `slow` as a turtle and `fast` as a rabbit running in a circular track
 - if they meet -> cycle exists
 - if the rabbit falls of the track -> no cycle
+
+### Formula:
+1. Initialize two pointers,  
+ex:
+```js
+let slow = head,
+    fast = head
+```
+>Both start at head
+2. Traverse while fast is valid,  
+ex:
+```js
+while (fast && fast.next) { ... }
+```
+>Important: always check for `fast` & `fast.next` to avoid null errors
+3. Move pointers inside the loop,  
+ex:
+```js
+slow = slow.next
+fast = fast.next.next
+```
+4. check if they meet / detection,  
+ex:
+```js
+if (slow === fast) return true
+```
+5. if no cycle, return false.  
+ex:
+```js
+return false
+```
+6. extra step: finding cycle start if cycle detected.  
+ex:
+```js
+slow = head
+while (slow !== fast) {
+  slow = slow.next
+  fast = fast.next
+}
+
+return slow
+```
+
+### 🧠 Mnemonic
+I-W-M-C-R → Init, While, Move, Check, Return
+- Init slow and fast pointers
+- While loop with fast && fast.next
+- Move slow (1x) and fast (2x)
+- Check if pointers meet (cycle)
+- Return result or handle extra logic (e.g. cycle start or middle node)
