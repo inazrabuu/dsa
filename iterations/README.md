@@ -6,6 +6,35 @@
 > "Two archers on a line - if the arrow is two short, move left forward, if too long, move right backward"
 - Visualize `left` and `right` standing at both ends of a sorted array, adjusting until they meet the target
 
+### Formula
+1. Initialize pointers (most left & most right)
+ex:
+```js
+let left = 0,
+    right = arr.length - 1
+```
+2. Loop until the pointers meet
+ex:
+```js
+while (left < right) { ... }
+```
+3. Calculate something in the loop
+ex:
+```js
+const sum = arr[left] + arr[right]
+```
+4. Decision making
+ex:
+```js
+if (sum === target) return true
+if (sum < target) left++
+else right++
+```
+5. Return result if no match
+```js
+return fase
+```
+
 ## Sliding Window (Elastic movement)
 - Use a dynamic "window" to track a substring or subarray, expanding or shrinking it based on constraints
 - Trigger words: "longest", "substring", "subarray", "no repeat"
