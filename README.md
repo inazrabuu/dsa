@@ -2,7 +2,7 @@
 
 A practice / playground to understand Data Structure & Algorithm.
 
-## Keyword -> Pattern
+## Keyword → Pattern
 | Pattern | Trigger Keyword | Hook |
 | ------- | --------------- | ---- |
 | Two Pointers | "Pair", "Closest", "Water", "Sorted Array", "Palindrome" | "Two runners from both ends racing towards each other" |
@@ -13,3 +13,13 @@ A practice / playground to understand Data Structure & Algorithm.
 | DFS / BFS | "Islands", "Connected", "Shortest path", "Rotting" | "DFS dives deep, BFS spreads like a wave" |
 | Backtracking | "Permutations", "Combinations", "Subsets", "Solve sudoku" | "Try, undo, try another, fitting room" |
 | Binary Search on Answer | "Find minimum of X", "Capacity", "Speed", "Peak", "Koko" | "Guess the answer, check feasibility, shrink range" |
+
+## Quick Pull Up
+- Pairs & sorted? → Two Pointers
+- Window length or substring? → Sliding Window
+- Linked List? → Fast & Slow
+- Count/group things? → HashMap
+- Undo moves? → Backtracking
+- Spread or traverse levels? → BFS/DFS
+- Stack-like behavior? → Stack
+- "Minimum X such that..."? → Binary Search on Answer
