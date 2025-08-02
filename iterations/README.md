@@ -88,6 +88,15 @@ result = Math.max(result, right - left + 1)
 return result
 ```
 
+### 🧠 Mnemonic
+L-E-S-A-U-R → Left, Expand, Shrink, Add, Update, Return
+- Left pointer init
+- Expand with right pointer
+- Shrink if window invalid
+- Add element to cache
+- Update result
+- Return answer
+
 ## Fast & Slow Pointers
 - Use two pointers that move at different speeds (usually `fast` moves 2 steps, `slow` moves ` step) to detect cycles or find midpoints.
 - Trigger words: "Linked list cycle", "Detect loop", "Find middle of linked list"
