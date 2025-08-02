@@ -7,33 +7,37 @@
 - Visualize `left` and `right` standing at both ends of a sorted array, adjusting until they meet the target
 
 ### Formula
-1. Initialize pointers (most left & most right)
-ex:
+1. Initialize pointers (most left & most right), ex:
 ```js
 let left = 0,
     right = arr.length - 1
 ```
-2. Loop until the pointers meet
-ex:
+2. Loop until the pointers meet, ex:
 ```js
 while (left < right) { ... }
 ```
-3. Calculate something in the loop
-ex:
+3. Calculate something in the loop, ex:
 ```js
 const sum = arr[left] + arr[right]
 ```
-4. Decision making
-ex:
+4. Decision making, ex:
 ```js
 if (sum === target) return true
 if (sum < target) left++
 else right++
 ```
-5. Return result if no match
+5. Return result if no match, ex:
 ```js
 return fase
 ```
+
+### 🧠 Mnemonic
+L-W-C-D-R → Left, While, Calc, Decide, Return
+- Left/right pointer init
+- While loop until they meet
+- Calculation
+- Decision which pointer to move
+- Return result if no answer
 
 ## Sliding Window (Elastic movement)
 - Use a dynamic "window" to track a substring or subarray, expanding or shrinking it based on constraints
