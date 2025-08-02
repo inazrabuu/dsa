@@ -127,7 +127,7 @@ ex:
 slow = slow.next
 fast = fast.next.next
 ```
-4. check if they meet / detection,  
+4. check if they meet / cycle detection,  
 ex:
 ```js
 if (slow === fast) return true
