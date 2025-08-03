@@ -66,7 +66,7 @@ return result
 ```
 
 ### 🧠 Mnemonic
->**DFS**: R-P-V → Recursive, Process, Visit neighbors
+>**DFS**: R-P-V → Recursive, Process, Visit neighbors  
 >**BFS**: Q-P-V → Queue, Process, Visit neighbors
 - DFS dives deep first.
 - BFS spreads level by level using a queue.
