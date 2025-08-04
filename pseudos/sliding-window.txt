@@ -1,0 +1,7 @@
+left = 0
+for right in range(n):
+  add s[right] to window
+  while invalid:
+    remove s[left] from window
+    left++
+  update result if valid

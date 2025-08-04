@@ -1,0 +1,7 @@
+left = 0, right = n - 1
+while left < right:
+  mid = (right - left) // 2
+  if valid_condition:
+    return mid
+  else:
+    adjust left & right

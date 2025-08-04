@@ -1,0 +1,7 @@
+stack = []
+for char in s:
+  if valid_condition:
+    stack.pop()
+  else:
+    stack.push(char)
+return len(stack) == 0

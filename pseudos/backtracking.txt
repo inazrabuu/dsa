@@ -1,0 +1,7 @@
+def backtrack(path, options):
+  if goal:
+    result.append(path)
+  for option in options:
+    choose
+    backtrack(path)
+    unchoose

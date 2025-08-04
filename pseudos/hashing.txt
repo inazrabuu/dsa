@@ -1,0 +1,5 @@
+map = {}
+for item in arr:
+  udpate map count
+  if condition met:
+    update result

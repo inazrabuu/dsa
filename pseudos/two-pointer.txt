@@ -1,0 +1,5 @@
+left = 0, right = n.length - 1
+while left < right:
+  if valid_conditions:
+    update_result
+  move pointers accordingly
