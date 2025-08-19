@@ -5,8 +5,6 @@ const largestRectangle = function(heights) {
   for (let i = 0; i <= heights.length; i++) {
     let pole = i === heights.length ? 0 : heights[i]
 
-    console.log(stack)
-
     while (stack.length && pole < heights[stack[stack.length - 1]]) {
       let height = heights[stack.pop()],
           width = stack.length ? i - stack[stack.length - 1] - 1 : i
